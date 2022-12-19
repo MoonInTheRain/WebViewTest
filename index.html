@@ -5,7 +5,13 @@
   <META CHARSET="UTF-8">
 </HEAD>
 <BODY>
-  <button type="button" onclick="test1">Test1</button>
-  <button type="button" onclick="test2">Test2</button>
+  <button type="button" onclick="onClick('test1')">Test1</button>
+  <button type="button" onclick="onClick('test2')">Test2</button>
 </BODY>
+<script>
+  function onClick(val) {
+    console.log(val);
+    parent.onClickWebView(val);
+  }
+</script>
 </HTML>
