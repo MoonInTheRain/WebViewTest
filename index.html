@@ -1,19 +1,21 @@
 <!DOCTYPE HTML>
-<HTML>
-<HEAD>
-  <TITLE>てすと！</TITLE>
-  <META CHARSET="UTF-8">
-</HEAD>
-<BODY>
+<html>
+<head>
+  <title>てすと！</title>
+  <meta CHARSET="UTF-8">
+</head>
+<body>
   <button type="button" onclick="onClick('test1')">Test1</button>
   <button type="button" onclick="onClick('test2')">Test2</button>
-</BODY>
+  <button type="button" onclick="onClick('test3')">Test3</button>
+  <button type="button" onclick="onClick('test4')">Test4</button>
+  <button type="button" onclick="onClick('test5')">Test5</button>
+  <button type="button" onclick="onClick('test6')">Test6</button>
+  <button type="button" onclick="onClick('test7')">Test7</button>
+</body>
 <script>
   function onClick(val) {
-    console.log(val);
-    console.log(this);
-    console.log(parent);
     parent.postMessage(val, "*");
   }
 </script>
-</HTML>
+</html>
