@@ -13,7 +13,7 @@
     console.log(val);
     console.log(this);
     console.log(parent);
-    parent.postMessage("test", val);
+    parent.postMessage(val, "*");
   }
 </script>
 </HTML>
