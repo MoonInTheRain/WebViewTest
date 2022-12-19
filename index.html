@@ -11,7 +11,7 @@
 <script>
   function onClick(val) {
     console.log(val);
-    document.location = 'testkey://test=' + val;
+    parent.sendMessage("test", val);
   }
 </script>
 </HTML>
